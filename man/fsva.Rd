@@ -2,8 +2,8 @@
 % Please edit documentation in R/fsva.R
 \name{fsva}
 \alias{fsva}
-\title{A function for performing frozen surrogate variable analysis as proposed in
-Parker, Corrada Bravo and Leek 2013}
+\title{A function for performing frozen surrogate variable analysis as
+proposed in Parker, Corrada Bravo and Leek 2013}
 \usage{
 fsva(dbdat, mod, sv, newdat = NULL, method = c("fast", "exact"))
 }
@@ -26,10 +26,10 @@ is calculated, but will be slower}
 }
 \value{
 db An adjusted version of the training database where the effect of
-  batch/expression heterogeneity has been removed
+batch/expression heterogeneity has been removed
 
 new An adjusted version of the new samples, adjusted one at a time
-  using the fsva methodology.
+using the fsva methodology.
 
 newsv Surrogate variables for the new samples
 }

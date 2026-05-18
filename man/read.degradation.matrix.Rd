@@ -2,17 +2,13 @@
 % Please edit documentation in R/read.degradation.matrix.R
 \name{read.degradation.matrix}
 \alias{read.degradation.matrix}
-\title{A function for reading in coverage data from degradation-susceptible regions}
+\title{A function for reading in coverage data from degradation-susceptible
+regions}
 \usage{
-read.degradation.matrix(
-  covFiles,
-  sampleNames,
-  totalMapped,
-  readLength = 100,
-  normFactor = 8e+07,
-  type = c("bwtool", "region_matrix_single", "region_matrix_all"),
-  BPPARAM = bpparam()
-)
+read.degradation.matrix(covFiles, sampleNames, totalMapped, 
+    readLength = 100, normFactor = 80e6,
+    type = c("bwtool","region_matrix_single","region_matrix_all"),
+    BPPARAM = bpparam())
 }
 \arguments{
 \item{covFiles}{coverage file(s) for degradation regions}
@@ -42,24 +38,24 @@ degradation matrix for subsequent RNA quality correction
 # bwtool
 bwPath <- system.file('extdata', 'bwtool', package = 'sva')
 degCovAdj <- read.degradation.matrix(
- covFiles = list.files(bwPath,full.names=TRUE),
- sampleNames = list.files(bwPath), readLength = 76, 
- totalMapped = rep(100e6,5),type="bwtool")
- head(degCovAdj)
- 
+    covFiles = list.files(bwPath,full.names=TRUE),
+    sampleNames = list.files(bwPath), readLength = 76, 
+    totalMapped = rep(100e6,5),type="bwtool")
+head(degCovAdj)
+
 # region_matrix: each sample
 r1Path <- system.file('extdata', 'region_matrix_one', package = 'sva')
 degCovAdj1 <- read.degradation.matrix(
- covFiles = list.files(r1Path,full.names=TRUE),
- sampleNames = list.files(r1Path), readLength = 76, 
- totalMapped = rep(100e6,5),type="region_matrix_single")
- head(degCovAdj1)
- 
+    covFiles = list.files(r1Path,full.names=TRUE),
+    sampleNames = list.files(r1Path), readLength = 76, 
+    totalMapped = rep(100e6,5),type="region_matrix_single")
+head(degCovAdj1)
+
 r2Path <- system.file('extdata', 'region_matrix_all', package = 'sva')
 degCovAdj2 <- read.degradation.matrix(
- covFiles = list.files(r2Path,full.names=TRUE),
- sampleNames = list.files(r1Path), readLength = 76, 
- totalMapped = rep(100e6,5),type="region_matrix_all")
+    covFiles = list.files(r2Path,full.names=TRUE),
+    sampleNames = list.files(r1Path), readLength = 76, 
+    totalMapped = rep(100e6,5),type="region_matrix_all")
 head(degCovAdj2)
 
 }

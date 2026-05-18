@@ -2,8 +2,8 @@
 % Please edit documentation in R/psva.R
 \name{psva}
 \alias{psva}
-\title{A function for estimating surrogate variables with the two step approach of
-Leek and Storey 2007}
+\title{A function for estimating surrogate variables with the two step
+approach of Leek and Storey 2007}
 \usage{
 psva(dat, batch, ...)
 }
@@ -17,7 +17,7 @@ in columns}
 }
 \value{
 psva.D Data with batch effect removed but biological heterogeneity
-  preserved
+preserved
 }
 \description{
 This function is the implementation of the two step approach for estimating

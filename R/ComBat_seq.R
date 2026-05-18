@@ -1,4 +1,5 @@
-#' Adjust for batch effects w/an empirical Bayes framework in RNA-seq raw counts
+#' Adjust for batch effects w/an empirical Bayes framework in RNA-seq 
+#' raw counts
 #' 
 #' ComBat_seq is an improved model from ComBat using negative binomial
 #' regression, which specifically targets RNA-Seq count data.
@@ -18,9 +19,12 @@
 #' @return data A gene x sample count matrix, adjusted for batch effects.
 #' 
 #' @importFrom edgeR DGEList estimateGLMCommonDisp estimateGLMTagwiseDisp glmFit
-#'   glmFit.default getOffset
+#' @importFrom edgeR glmFit.default getOffset
 #' @importFrom stats dnbinom lm pnbinom qnbinom
 #' @importFrom utils capture.output
+#' 
+#' @usage ComBat_seq(counts, batch, group = NULL, covar_mod = NULL, 
+#' full_mod = TRUE, shrink = FALSE, shrink.disp = FALSE, gene.subset.n = NULL)
 #' 
 #' @examples 
 #' 
@@ -30,15 +34,15 @@
 #' 
 #' # include condition (group variable)
 #' adjusted_counts <- ComBat_seq(count_matrix,
-#'   batch=batch,
-#'   group=group, 
-#'   full_mod=TRUE)
+#'     batch=batch,
+#'     group=group, 
+#'     full_mod=TRUE)
 #' 
 #' # do not include condition
 #' adjusted_counts <- ComBat_seq(count_matrix,
-#'   batch=batch,
-#'   group=NULL,
-#'   full_mod=FALSE)
+#'     batch=batch,
+#'     group=NULL,
+#'     full_mod=FALSE)
 #' 
 #' @export
 #' 

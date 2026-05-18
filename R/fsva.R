@@ -1,5 +1,5 @@
-#' A function for performing frozen surrogate variable analysis as proposed in
-#' Parker, Corrada Bravo and Leek 2013
+#' A function for performing frozen surrogate variable analysis as
+#' proposed in Parker, Corrada Bravo and Leek 2013
 #' 
 #' This function performs frozen surrogate variable analysis as described in
 #' Parker, Corrada Bravo and Leek 2013. The approach uses a training database to
@@ -22,9 +22,9 @@
 #'   is calculated, but will be slower
 #'
 #' @return db An adjusted version of the training database where the effect of
-#'   batch/expression heterogeneity has been removed
+#' batch/expression heterogeneity has been removed
 #' @return new An adjusted version of the new samples, adjusted one at a time
-#'   using the fsva methodology. 
+#' using the fsva methodology. 
 #' @return newsv Surrogate variables for the new samples
 #' 
 #' @examples 

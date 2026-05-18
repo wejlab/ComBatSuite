@@ -2,20 +2,12 @@
 % Please edit documentation in R/sva.R
 \name{sva}
 \alias{sva}
-\title{A function for estimating surrogate variables by estimating empirical control
-probes}
+\title{A function for estimating surrogate variables by estimating empirical
+control probes}
 \usage{
-sva(
-  dat,
-  mod,
-  mod0 = NULL,
-  n.sv = NULL,
-  controls = NULL,
-  method = c("irw", "two-step", "supervised"),
-  vfilter = NULL,
-  B = 5,
-  numSVmethod = "be"
-)
+sva(dat, mod, mod0 = NULL, n.sv=NULL, controls=NULL, 
+    method =  c("irw", "two-step", "supervised"), vfilter = NULL,
+    B = 5, numSVmethod = "be")
 }
 \arguments{
 \item{dat}{The transformed data matrix with the variables in rows and samples
@@ -48,10 +40,10 @@ unless they are an expert.}
 sv The estimated surrogate variables, one in each column
 
 pprob.gam: A vector of the posterior probabilities each gene is
-  affected by heterogeneity
+    affected by heterogeneity
 
 pprob.b A vector of the posterior probabilities each gene is
-  affected by mod
+    affected by mod
 
 n.sv The number of significant surrogate variables
 }

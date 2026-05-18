@@ -2,18 +2,11 @@
 % Please edit documentation in R/ComBat_seq.R
 \name{ComBat_seq}
 \alias{ComBat_seq}
-\title{Adjust for batch effects w/an empirical Bayes framework in RNA-seq raw counts}
+\title{Adjust for batch effects w/an empirical Bayes framework in RNA-seq 
+raw counts}
 \usage{
-ComBat_seq(
-  counts,
-  batch,
-  group = NULL,
-  covar_mod = NULL,
-  full_mod = TRUE,
-  shrink = FALSE,
-  shrink.disp = FALSE,
-  gene.subset.n = NULL
-)
+ComBat_seq(counts, batch, group = NULL, covar_mod = NULL, 
+full_mod = TRUE, shrink = FALSE, shrink.disp = FALSE, gene.subset.n = NULL)
 }
 \arguments{
 \item{counts}{Raw count matrix from genomic studies (dimensions gene x
@@ -50,14 +43,14 @@ group <- rep(c(0,1), 4)
 
 # include condition (group variable)
 adjusted_counts <- ComBat_seq(count_matrix,
-  batch=batch,
-  group=group, 
-  full_mod=TRUE)
+    batch=batch,
+    group=group, 
+    full_mod=TRUE)
 
 # do not include condition
 adjusted_counts <- ComBat_seq(count_matrix,
-  batch=batch,
-  group=NULL,
-  full_mod=FALSE)
+    batch=batch,
+    group=NULL,
+    full_mod=FALSE)
 
 }

@@ -14,7 +14,7 @@ samples in rows and genes in columns}
 }
 \value{
 dat.adjusted Cleaned gene expression data matrix with the top
-  prinicpal components removed
+    principal components removed
 }
 \description{
 This function corrects a gene expression matrix prior to network inference by

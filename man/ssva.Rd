@@ -2,7 +2,8 @@
 % Please edit documentation in R/ssva.R
 \name{ssva}
 \alias{ssva}
-\title{A function for estimating surrogate variables using a supervised approach}
+\title{A function for estimating surrogate variables using a supervised
+approach}
 \usage{
 ssva(dat, controls, n.sv)
 }
@@ -20,10 +21,10 @@ and a value of 0 means the gene is certainly not a control.}
 sv The estimated surrogate variables, one in each column
 
 pprob.gam: A vector of the posterior probabilities each gene is
-  affected by heterogeneity (exactly equal to controls for ssva)
+    affected by heterogeneity (exactly equal to controls for ssva)
 
 pprob.b A vector of the posterior probabilities each gene is affected
-  by mod (always null for ssva)
+    by mod (always null for ssva)
 
 n.sv The number of significant surrogate variables
 }

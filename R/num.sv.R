@@ -1,5 +1,5 @@
-#' A function for calculating the number of surrogate variables to estimate in
-#' a model 
+#' A function for calculating the number of surrogate variables to
+#' estimate in a model 
 #' 
 #' This function estimates the number of surrogate variables that should be
 #' included in a differential expression model. The default approach is based

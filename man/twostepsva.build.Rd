@@ -2,8 +2,8 @@
 % Please edit documentation in R/twostepsva.build.R
 \name{twostepsva.build}
 \alias{twostepsva.build}
-\title{A function for estimating surrogate variables with the two step approach of
-Leek and Storey 2007}
+\title{A function for estimating surrogate variables with the two step
+approach of Leek and Storey 2007}
 \usage{
 twostepsva.build(dat, mod, n.sv)
 }
@@ -19,10 +19,10 @@ in columns}
 sv The estimated surrogate variables, one in each column
 
 pprob.gam: A vector of the posterior probabilities each gene is
-  affected by heterogeneity
+    affected by heterogeneity
 
 pprob.b A vector of the posterior probabilities each gene is
-  affected by mod (this is always null for the two-step approach)
+    affected by mod (this is always null for the two-step approach)
 
 n.sv The number of significant surrogate variables
 }

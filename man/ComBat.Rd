@@ -4,16 +4,9 @@
 \alias{ComBat}
 \title{Adjust for batch effects using an empirical Bayes framework}
 \usage{
-ComBat(
-  dat,
-  batch,
-  mod = NULL,
-  par.prior = TRUE,
-  prior.plots = FALSE,
-  mean.only = FALSE,
-  ref.batch = NULL,
-  BPPARAM = bpparam("SerialParam")
-)
+ComBat(dat, batch, mod = NULL, par.prior = TRUE,
+prior.plots = FALSE, mean.only = FALSE, ref.batch = NULL, 
+BPPARAM = bpparam("SerialParam"))
 }
 \arguments{
 \item{dat}{Genomic measure matrix (dimensions probe x sample) - for example,
@@ -40,7 +33,7 @@ reference for batch adjustment.}
 }
 \value{
 data A probe x sample genomic measure matrix, adjusted for batch
-  effects.
+    effects.
 }
 \description{
 ComBat allows users to adjust for batch effects in datasets where the batch
@@ -62,14 +55,14 @@ mod <- model.matrix(~as.factor(cancer), data=pheno)
 
 # parametric adjustment
 combat_edata1 <- ComBat(dat=edata, batch=batch, mod=NULL, par.prior=TRUE, 
-  prior.plots=FALSE)
+    prior.plots=FALSE)
 
 # non-parametric adjustment, mean-only version
 combat_edata2 <- ComBat(dat=edata, batch=batch, mod=NULL, par.prior=FALSE,
-  mean.only=TRUE)
+    mean.only=TRUE)
 
 # reference-batch version, with covariates
 combat_edata3 <- ComBat(dat=edata, batch=batch, mod=mod, par.prior=TRUE,
-  ref.batch=3)
+    ref.batch=3)
 
 }
