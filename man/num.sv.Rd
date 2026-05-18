@@ -2,8 +2,8 @@
 % Please edit documentation in R/num.sv.R
 \name{num.sv}
 \alias{num.sv}
-\title{A function for calculating the number of surrogate variables to estimate in
-a model}
+\title{A function for calculating the number of surrogate variables to
+estimate in a model}
 \usage{
 num.sv(dat, mod, method = c("be", "leek"), vfilter = NULL, B = 20, seed = NULL)
 }

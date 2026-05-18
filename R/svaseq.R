@@ -1,4 +1,5 @@
-#' A function for estimating surrogate variables for count based RNA-seq data. 
+#' A function for estimating surrogate variables for count based RNA-seq
+#' data 
 #' 
 #' This function is the implementation of the iteratively re-weighted least
 #' squares approach for estimating surrogate variables. As a by product, this
@@ -30,10 +31,14 @@
 #' 
 #' @return sv The estimated surrogate variables, one in each column
 #' @return pprob.gam: A vector of the posterior probabilities each gene is
-#'   affected by heterogeneity
+#'     affected by heterogeneity
 #' @return pprob.b A vector of the posterior probabilities each gene is affected
-#'   by mod
+#'     by mod
 #' @return n.sv The number of significant surrogate variables
+#' 
+#' @usage svaseq(dat, mod, mod0 = NULL, n.sv=NULL, controls=NULL, 
+#'     method=c("irw","two-step","supervised"), vfilter=NULL, B=5, 
+#'     numSVmethod = "be", constant = 1)
 #' 
 #' @examples 
 #' library(zebrafishRNASeq)

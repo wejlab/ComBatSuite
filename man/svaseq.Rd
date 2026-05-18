@@ -2,20 +2,12 @@
 % Please edit documentation in R/svaseq.R
 \name{svaseq}
 \alias{svaseq}
-\title{A function for estimating surrogate variables for count based RNA-seq data.}
+\title{A function for estimating surrogate variables for count based RNA-seq
+data}
 \usage{
-svaseq(
-  dat,
-  mod,
-  mod0 = NULL,
-  n.sv = NULL,
-  controls = NULL,
-  method = c("irw", "two-step", "supervised"),
-  vfilter = NULL,
-  B = 5,
-  numSVmethod = "be",
-  constant = 1
-)
+svaseq(dat, mod, mod0 = NULL, n.sv=NULL, controls=NULL, 
+    method=c("irw","two-step","supervised"), vfilter=NULL, B=5, 
+    numSVmethod = "be", constant = 1)
 }
 \arguments{
 \item{dat}{The transformed data matrix with the variables in rows and samples
@@ -51,10 +43,10 @@ By default constant = 1, all values of dat + constant should be positive.}
 sv The estimated surrogate variables, one in each column
 
 pprob.gam: A vector of the posterior probabilities each gene is
-  affected by heterogeneity
+    affected by heterogeneity
 
 pprob.b A vector of the posterior probabilities each gene is affected
-  by mod
+    by mod
 
 n.sv The number of significant surrogate variables
 }

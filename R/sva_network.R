@@ -10,7 +10,7 @@
 #' @param n.pc The number of principal components to remove 
 
 #' @return dat.adjusted Cleaned gene expression data matrix with the top
-#'   prinicpal components removed
+#'     principal components removed
 #' 
 #' @examples 
 #' library(bladderbatch)

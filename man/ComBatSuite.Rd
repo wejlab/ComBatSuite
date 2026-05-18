@@ -2,7 +2,8 @@
 % Please edit documentation in R/ComBatSuite-package.R
 \name{ComBatSuite}
 \alias{ComBatSuite}
-\title{ComBatSuite: a package for removing artifacts from microarray/sequencing data}
+\title{ComBatSuite: a package for removing artifacts from
+microarray/sequencing data}
 \description{
 ComBatSuite has functionality to estimate and remove artifacts from high 
 dimensional data the \code{\link{sva}} function can be used to estimate
@@ -18,35 +19,35 @@ R prompt
 }
 \references{
 For the package: Leek JT, Johnson WE, Parker HS, Jaffe AE, and 
-  Storey JD. (2012) The ComBatSuite package for removing batch effects and
-  other unwanted variation in high-throughput experiments. Bioinformatics 
-  DOI:10.1093/bioinformatics/bts034
+Storey JD. (2012) The ComBatSuite package for removing batch effects and
+other unwanted variation in high-throughput experiments. Bioinformatics 
+DOI:10.1093/bioinformatics/bts034
 
 For sva: Leek JT and Storey JD. (2008) A general framework for 
-  multiple testing dependence. Proceedings of the National Academy of 
-  Sciences , 105: 18718-18723.
+multiple testing dependence. Proceedings of the National Academy of 
+Sciences , 105: 18718-18723.
 
 For sva: Leek JT and Storey JD. (2007) Capturing heterogeneity 
-  in gene expression studies by `Surrogate Variable Analysis'. PLoS Genetics,
-  3: e161.
+in gene expression studies by `Surrogate Variable Analysis'. PLoS Genetics,
+3: e161.
 
 For ComBat: Johnson WE, Li C, Rabinovic A (2007) Adjusting batch
-  effects in microarray expression data using empirical Bayes methods.
-  Biostatistics,  8 (1), 118-127
+effects in microarray expression data using empirical Bayes methods.
+Biostatistics,  8 (1), 118-127
 
 For svaseq: Leek JT (2014) svaseq: removing batch and other
-  artifacts from count-based sequencing data. bioRxiv doi: TBD
+artifacts from count-based sequencing data. bioRxiv doi: TBD
 
 For fsva: Parker HS, Bravo HC, Leek JT (2013) Removing batch
-  effects for prediction problems with frozen surrogate variable analysis
-  arXiv:1301.3947
+effects for prediction problems with frozen surrogate variable analysis
+arXiv:1301.3947
 
 For psva: Parker HS, Leek JT, Favorov AV, Considine M, Xia X,
-  Chavan S, Chung CH, Fertig EJ (2014) Preserving biological heterogeneity
- with a permuted surrogate variable analysis for genomics batch correction
- Bioinformatics doi: 10.1093/bioinformatics/btu375
+Chavan S, Chung CH, Fertig EJ (2014) Preserving biological heterogeneity
+with a permuted surrogate variable analysis for genomics batch correction
+Bioinformatics doi: 10.1093/bioinformatics/btu375
 }
 \author{
 Jeffrey T. Leek, W. Evan Johnson, Hilary S. Parker, Andrew E. Jaffe,
-  John D. Storey, Yuqing Zhang
+    John D. Storey, Yuqing Zhang
 }

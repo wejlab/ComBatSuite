@@ -23,13 +23,17 @@
 #' @param BPPARAM (Optional) BiocParallelParam for parallel operation
 #'
 #' @return data A probe x sample genomic measure matrix, adjusted for batch
-#'   effects.
+#'     effects.
 #'
 #' @importFrom graphics lines par
 #' @importFrom stats cor density dnorm model.matrix pf ppoints prcomp predict
-#' qgamma qnorm qqline qqnorm qqplot smooth.spline var
+#' @importFrom stats qgamma qnorm qqline qqnorm qqplot smooth.spline var
 #' @importFrom utils read.delim
 #'
+#' @usage ComBat(dat, batch, mod = NULL, par.prior = TRUE,
+#' prior.plots = FALSE, mean.only = FALSE, ref.batch = NULL, 
+#' BPPARAM = bpparam("SerialParam"))
+#' 
 #' @examples
 #' library(bladderbatch)
 #' data(bladderdata)
@@ -42,15 +46,15 @@
 #'
 #' # parametric adjustment
 #' combat_edata1 <- ComBat(dat=edata, batch=batch, mod=NULL, par.prior=TRUE, 
-#'   prior.plots=FALSE)
+#'     prior.plots=FALSE)
 #'
 #' # non-parametric adjustment, mean-only version
 #' combat_edata2 <- ComBat(dat=edata, batch=batch, mod=NULL, par.prior=FALSE,
-#'   mean.only=TRUE)
+#'     mean.only=TRUE)
 #'
 #' # reference-batch version, with covariates
 #' combat_edata3 <- ComBat(dat=edata, batch=batch, mod=mod, par.prior=TRUE,
-#'   ref.batch=3)
+#'     ref.batch=3)
 #'
 #' @export
 #'

@@ -1,5 +1,5 @@
-#' A function for estimating surrogate variables with the two step approach of
-#' Leek and Storey 2007
+#' A function for estimating surrogate variables with the two step
+#' approach of Leek and Storey 2007
 #' 
 #' This function is the implementation of the two step approach for estimating
 #' surrogate variables proposed by Leek and Storey 2007 PLoS Genetics. This
@@ -14,7 +14,7 @@
 #' @param ... Other arguments to the \code{\link{sva}} function. 
 #'
 #' @return psva.D Data with batch effect removed but biological heterogeneity
-#'   preserved
+#' preserved
 #' 
 #' @importFrom limma lmFit
 #' @importFrom methods is

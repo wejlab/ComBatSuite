@@ -15,9 +15,9 @@
 #' 
 #' @return sv The estimated surrogate variables, one in each column
 #' @return pprob.gam: A vector of the posterior probabilities each gene is
-#'   affected by heterogeneity
+#'     affected by heterogeneity
 #' @return pprob.b A vector of the posterior probabilities each gene is
-#'   affected by mod
+#'     affected by mod
 #' @return n.sv The number of significant surrogate variables
 #' 
 #' @examples 

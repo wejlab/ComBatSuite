@@ -14,6 +14,9 @@
 #' 
 #' @return pcontrol A vector of probabilites that each gene is a control. 
 #' 
+#' @usage empirical.controls(dat, mod, mod0 = NULL, n.sv, B = 5, 
+#' type = c("norm","counts"))
+#' 
 #' @examples 
 #' library(bladderbatch)
 #' data(bladderdata)

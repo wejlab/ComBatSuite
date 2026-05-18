@@ -9,6 +9,9 @@
 #'
 #' @return the qSV adjustment variables
 #'
+#' @usage qsva(degradationMatrix, mod = matrix(1, ncol=1, 
+#' nrow = ncol(degradationMatrix)))
+#' 
 #' @examples
 #'
 #' ## Find files
@@ -16,12 +19,12 @@
 #'
 #' ## Read the data
 #' degCovAdj = read.degradation.matrix(
-#'  covFiles = list.files(bwPath,full.names=TRUE),
-#'  sampleNames = list.files(bwPath), readLength = 76, 
-#'  totalMapped = rep(100e6,5),type="bwtool")
+#'     covFiles = list.files(bwPath,full.names=TRUE),
+#'     sampleNames = list.files(bwPath), readLength = 76, 
+#'     totalMapped = rep(100e6,5),type="bwtool")
 #'
 #' ## Input data
-#'  head(degCovAdj)
+#' head(degCovAdj)
 #'
 #' ## Results
 #' qsva(degCovAdj)

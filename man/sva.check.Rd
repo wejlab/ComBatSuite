@@ -21,10 +21,10 @@ samples in columns}
 sv The estimated surrogate variables, one in each column
 
 pprob.gam: A vector of the posterior probabilities each gene is
-  affected by heterogeneity
+    affected by heterogeneity
 
 pprob.b A vector of the posterior probabilities each gene is
-  affected by mod
+    affected by mod
 
 n.sv The number of significant surrogate variables
 }

@@ -1,4 +1,5 @@
-#' A function for estimating surrogate variables using a supervised approach
+#' A function for estimating surrogate variables using a supervised
+#' approach
 #' 
 #' This function implements a supervised surrogate variable analysis approach
 #' where genes/probes known to be affected by artifacts but not by the
@@ -15,9 +16,9 @@
 #'
 #' @return sv The estimated surrogate variables, one in each column
 #' @return pprob.gam: A vector of the posterior probabilities each gene is
-#'   affected by heterogeneity (exactly equal to controls for ssva)
+#'     affected by heterogeneity (exactly equal to controls for ssva)
 #' @return pprob.b A vector of the posterior probabilities each gene is affected
-#'   by mod (always null for ssva)
+#'     by mod (always null for ssva)
 #' @return n.sv The number of significant surrogate variables
 #' 
 #' @examples 

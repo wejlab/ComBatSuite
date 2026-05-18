@@ -1,5 +1,5 @@
-#' A function for estimating surrogate variables by estimating empirical control
-#' probes
+#' A function for estimating surrogate variables by estimating empirical
+#' control probes
 #' 
 #' This function is the implementation of the iteratively re-weighted least
 #' squares approach for estimating surrogate variables. As a by product, this
@@ -27,11 +27,15 @@
 #' 
 #' @return sv The estimated surrogate variables, one in each column
 #' @return pprob.gam: A vector of the posterior probabilities each gene is
-#'   affected by heterogeneity
+#'     affected by heterogeneity
 #' @return pprob.b A vector of the posterior probabilities each gene is
-#'   affected by mod
+#'     affected by mod
 #' @return n.sv The number of significant surrogate variables
 #' 
+#' @usage sva(dat, mod, mod0 = NULL, n.sv=NULL, controls=NULL, 
+#'     method =  c("irw", "two-step", "supervised"), vfilter = NULL,
+#'     B = 5, numSVmethod = "be")
+#'     
 #' @examples 
 #' library(bladderbatch)
 #' data(bladderdata)
