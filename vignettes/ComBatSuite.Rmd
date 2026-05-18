@@ -260,7 +260,7 @@ function:
 
 ```{R eBayes Function, results = "hide"}
 eb <- eBayes(fitContrasts)
-topTableF(eb, adjust = "BH")
+topTable(eb, adjust.method = "BH")
 ```
 
 

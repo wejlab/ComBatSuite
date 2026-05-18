@@ -1,7 +1,7 @@
 Package: ComBatSuite
 Title: Surrogate Variable Analysis
-Version: 3.35.3
-Date: 2025-10-15
+Version: 3.35.5
+Date: 2026-05-12
 Authors@R: c(
     person("Jessica", "Anderson", , "anderson.jessica@rutgers.edu", 
     role = c("ctr", "cre"), comment = c(ORCID = "0000-0002-0542-9872")),
@@ -42,7 +42,7 @@ License: Artistic-2.0
 URL: https://github.com/jessmcc22/ComBatSuite
 BugReports: https://github.com/jessmcc22/ComBatSuite/issues
 Depends:
-    R (>= 4.5.0),
+    R (>= 4.6.0),
     mgcv,
     genefilter,
     BiocParallel
@@ -66,5 +66,5 @@ VignetteBuilder:
 biocViews: BatchEffect, GeneExpression, GenomicVariation, ImmunoOncology, 
     Microarray, MultipleComparison, Normalization, Regression, RNASeq, 
     StatisticalMethod, Sequencing, Preprocessing
-RoxygenNote: 7.3.3
 Encoding: UTF-8
+Config/roxygen2/version: 8.0.0
